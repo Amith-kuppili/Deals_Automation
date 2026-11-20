@@ -1,0 +1,17 @@
+{
+    "id": "ITEM1",
+    "title": "Wireless Earbuds Pro",
+    "brand": "AudioTech",
+    "category": "Electronics",
+    "subcategory": "Audio",
+    "description": "High fidelity wireless earbuds with noise cancellation",
+    "url": "https://flipkart.com/item1",
+    "image": "https://img.com/1.jpg",
+    "price": 2999.0,
+    "mrp": 5999.0,
+    "seller": "SuperStore",
+    "availability": true,
+    "sku": "SKU123",
+    "model_number": "MOD-001",
+    "gtin": "GTIN-001"
+}

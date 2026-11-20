@@ -1,0 +1,38 @@
+{
+    "version": "v1.2.3",
+    "products": [
+        {
+            "productId": "PROD123",
+            "title": "Apple iPhone 15 (Black, 128 GB)",
+            "category": "mobiles",
+            "url": "https://www.flipkart.com/apple-iphone-15-black-128-gb/p/itmabc123",
+            "image": "https://example.com/iphone15.jpg",
+            "price": 69999.0,
+            "mrp": 79900.0,
+            "seller": "RetailNet",
+            "availability": true
+        },
+        {
+            "productId": "PROD456",
+            "title": "Samsung Galaxy S23 Ultra",
+            "category": "mobiles",
+            "url": "https://www.flipkart.com/samsung-galaxy-s23-ultra/p/itmdef456",
+            "image": "https://example.com/s23u.jpg",
+            "price": 104999.0,
+            "mrp": 124999.0,
+            "seller": "SuperCom",
+            "availability": true
+        },
+        {
+            "productId": "PROD789",
+            "title": "Sony WH-1000XM5 Headphones",
+            "category": "electronics",
+            "url": "https://www.flipkart.com/sony-wh-1000xm5/p/itmghi789",
+            "image": "https://example.com/sony.jpg",
+            "price": 24999.0,
+            "mrp": 29999.0,
+            "seller": "AudioHub",
+            "availability": false
+        }
+    ]
+}
