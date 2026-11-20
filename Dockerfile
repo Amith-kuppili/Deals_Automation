@@ -13,4 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # We will override the CMD in docker-compose
-CMD ["sh", "-c", "exec uvicorn src.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+COPY scripts/start.sh /app/scripts/start.sh
+RUN chmod +x /app/scripts/start.sh
+
+CMD ["/app/scripts/start.sh"]

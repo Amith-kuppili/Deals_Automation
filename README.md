@@ -99,6 +99,13 @@ Create separate Railway services that deploy this same repository:
 5. **Beat**: set the start command to
    `celery -A src.redis.celery_app beat --loglevel=info --schedule=/tmp/celerybeat-schedule`.
 
+The image also supports `SERVICE_ROLE=api|worker|beat`. This is the simplest
+setup for Railway: deploy the repository once, duplicate the service twice,
+set `SERVICE_ROLE=worker` on the worker and `SERVICE_ROLE=beat` on the Beat
+service, and set `SERVICE_ROLE=api` on the API service. All three services must
+receive the same `DATABASE_URL`, `REDIS_URL`, `CELERY_BROKER_URL`, and
+`CELERY_RESULT_BACKEND` values.
+
 The API service runs `alembic upgrade head` before starting. At least one
 PostgreSQL and one Redis service must be reachable by every service.
 
